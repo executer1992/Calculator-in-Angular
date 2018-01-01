@@ -1,0 +1,67 @@
+
+.calculator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 440px;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #003366 0%, #339966 100%);
+}
+.window{
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    position: relative;
+    
+}
+.displayNumbers{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 20px;
+    margin: 0;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,35px);
+    grid-template-rows: repeat(5,35px);   
+    
+}
+.dot{
+    height: 3px;
+    width: 3px;
+    background-color: black;
+    display: block;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.numbers{
+    background-color: rgb(211,211,211);
+    color:black;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+.buttons .numbers:nth-child(n+1){
+    border-right:none;
+   
+}
+.buttons .numbers:nth-child(n+4){
+    border-top:none;
+   
+}
+.zero{
+    grid-column: 1/3;
+}
+.arythmetic{
+    background-color: rgb(255,140,0);
+    border: 1px solid black;
+    font-size: 1.3rem;
+}
+.buttons .arythmetic:nth-child(4){
+    border-top:1px solid black;
+}
+.arythmetic:nth-child(n+2){
+    border-top: none;
+}

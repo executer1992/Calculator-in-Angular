@@ -1,0 +1,28 @@
+
+<div class="calculator">
+    <div class="window">
+      <p id="inputNumbers" class="displayNumbers">{{displayValue}}</p>
+    </div>
+    <div class="buttons">
+      <button (click)="clear()" class="numbers">AC</button>
+      <button (click)="plusMinus()" class="numbers">&#177;</button>
+      <button (click)="logarithm()" class="numbers">log</button>
+      <button (click)="performOperation('/')" class="arythmetic">&#247;</button>
+      <button (click)="addNumber(7)" class="numbers">7</button>
+      <button (click)="addNumber(8)" class="numbers">8</button>
+      <button (click)="addNumber(9)" class="numbers">9</button>
+      <button (click)="performOperation('*')" class="arythmetic">x</button>
+      <button (click)="addNumber(4)" class="numbers">4</button>
+      <button (click)="addNumber(5)" class="numbers">5</button>
+      <button (click)="addNumber(6)" class="numbers">6</button>
+      <button (click)="performOperation('-')" class="arythmetic">-</button>
+      <button (click)="addNumber(1)" class="numbers">1</button>
+      <button (click)="addNumber(2)" class="numbers">2</button>
+      <button (click)="addNumber(3)" class="numbers">3</button>
+      <button (click)="performOperation('+')" class="arythmetic">+</button>
+      <button (click)="addNumber(0)" class="numbers zero">0</button>
+      <button (click)="addDot()" class="numbers"><span class="dot"></span></button>
+      <button (click)="performOperation('=')" class="arythmetic">=</button>
+    </div>
+  </div>
+  
